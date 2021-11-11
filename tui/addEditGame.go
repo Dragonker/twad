@@ -59,6 +59,7 @@ func makeAddEditGame(g *games.Game) *tview.Flex {
 	}
 	inputSourcePort := tview.NewDropDown().SetOptions([]string{"NA"}, nil).SetLabel(dict.aeSourcePort).SetLabelColor(tview.Styles.SecondaryTextColor)
 	inputIwad := tview.NewDropDown().SetOptions([]string{"NA"}, nil).SetLabel(dict.aeIWAD).SetLabelColor(tview.Styles.SecondaryTextColor)
+	inputCompLevel := tview.NewDropDown().SetOptions(dict.aeCompLevel, nil).SetLabel("Compatibility").SetLabelColor(tview.Styles.SecondaryTextColor)
 	inputURL := tview.NewInputField().SetText(g.Link).SetLabel(dict.aeLink).SetLabelColor(tview.Styles.SecondaryTextColor)
 	inputEnvVars := tview.NewInputField().SetText(g.EnvironmentString()).SetLabel(dict.aeEnvironment).SetLabelColor(tview.Styles.SecondaryTextColor)
 	inputCustomParams := tview.NewInputField().SetText(g.ParamsString()).SetLabel(dict.aeOtherParams).SetLabelColor(tview.Styles.SecondaryTextColor)
@@ -98,6 +99,11 @@ func makeAddEditGame(g *games.Game) *tview.Flex {
 		}
 	}
 
+	// for comp level
+	if i, isIn := indexOfItemIn(g.CompLevel, dict.aeCompLevel); isIn {
+		inputCompLevel.SetCurrentOption(i)
+	}
+
 	// own configs
 	inputOwnCfg.SetDoneFunc(func(key tcell.Key) {
 		if inputOwnCfg.IsChecked() {
@@ -133,6 +139,7 @@ func makeAddEditGame(g *games.Game) *tview.Flex {
 	ae.AddFormItem(inputOwnCfg)
 	ae.AddFormItem(inputNoDeh)
 	ae.AddFormItem(inputSharedCfg)
+	ae.AddFormItem(inputCompLevel)
 	ae.AddFormItem(inputURL)
 	ae.AddFormItem(inputEnvVars)
 	ae.AddFormItem(inputCustomParams)
@@ -143,6 +150,7 @@ func makeAddEditGame(g *games.Game) *tview.Flex {
 		_, g.Iwad = inputIwad.GetCurrentOption()
 		g.PersonalPortCfg = inputOwnCfg.IsChecked()
 		g.NoDeh = inputNoDeh.IsChecked()
+		_, g.CompLevel = inputCompLevel.GetCurrentOption()
 		g.SharedConfig = inputSharedCfg.GetText()
 		g.Environment = splitParams(inputEnvVars.GetText())
 		g.CustomParameters = splitParams(inputCustomParams.GetText())

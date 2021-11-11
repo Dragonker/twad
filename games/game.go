@@ -36,6 +36,7 @@ type Game struct {
 	Link             string         `json:"link"`
 	PersonalPortCfg  bool           `json:"own_source_port_cfg"`
 	NoDeh            bool           `json:"no_deh"`
+	CompLevel        string         `json:"comp_level"`
 	SharedConfig     string         `json:"shared_config"`
 	Stats            []st.MapStats
 	StatsTotal       st.MapStats
@@ -244,6 +245,33 @@ func (g *Game) getLaunchParams(rcfg runOptionSet) []string {
 	if len(modsDeh) > 0 {
 		params = append(params, "-deh")
 		params = append(params, modsDeh...)
+	}
+
+	if g.CompLevel != "" {
+		params = append(params, "-complevel")
+
+		var comp string
+
+		// these are not all compatibility options but sure are the common ones
+		// for other options, the user can append them on the Others textbox
+		switch g.CompLevel {
+		case "doom1.6":
+			comp = "1"
+		case "doom1.9":
+			comp = "2"
+		case "udoom":
+			comp = "3"
+		case "fdoom":
+			comp = "4"
+		case "boom":
+			comp = "9"
+		case "mbf":
+			comp = "11"
+		case "mbf21":
+			comp = "21"
+		}
+
+		params = append(params, comp)
 	}
 
 	// custom game save directory

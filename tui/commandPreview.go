@@ -32,6 +32,7 @@ func stylizeCommandList(params []string) string {
 		"-file":          true,
 		"-nodeh":         true,
 		"-deh":           true,
+		"-complevel":     true,
 		"-savedir":       true,
 		"-save":          true,
 		"-config":        true,

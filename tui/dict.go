@@ -13,6 +13,7 @@ type dictionary struct {
 	aeIWAD       string
 	aeOwnCfg     string
 	aeNoDeh      string
+	aeCompLevel  []string
 	aeSharedCfgT string
 	aeLink       string
 
@@ -100,6 +101,7 @@ func defaultDict() dictionary {
 		aeIWAD:       "IWAD",
 		aeOwnCfg:     "Use Own Config",
 		aeNoDeh:      "nodeh",
+		aeCompLevel:  []string{"", "doom1.6", "doom1.9", "udoom", "fdoom", "boom", "mbf", "mbf21"},
 		aeSharedCfgT: "Use Shared Config [%v]",
 		aeLink:       "Mod URL",
 
