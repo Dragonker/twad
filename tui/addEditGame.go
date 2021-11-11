@@ -91,7 +91,7 @@ func makeAddEditGame(g *games.Game) *tview.Flex {
 	// for iwad
 	if len(base.Config().IWADs) > 0 {
 		inputIwad.SetOptions(base.Config().IWADs, nil)
-		if i, isIn := indexOfItemIn(g.Iwad, base.Config().IWADs); isIn {
+		if i, isIn := indexOfItemIn(strings.ToLower(g.Iwad), base.Config().IWADs); isIn {
 			inputIwad.SetCurrentOption(i)
 		} else {
 			inputIwad.SetCurrentOption(0)

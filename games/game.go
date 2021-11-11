@@ -198,6 +198,17 @@ func (g *Game) getLaunchParams(rcfg runOptionSet) []string {
 
 	// IWAD
 	if g.Iwad != "" {
+		_, iwadExists := os.Stat(os.Getenv("DOOMWADDIR") + "/" + g.Iwad);
+
+		if os.IsNotExist(iwadExists) {
+			iwadUppercase := strings.ToUpper(g.Iwad)
+			_, iwadUppercaseNotExist := os.Stat(os.Getenv("DOOMWADDIR") + "/" + iwadUppercase)
+
+			if iwadUppercaseNotExist == nil {
+				g.Iwad = iwadUppercase
+			}
+		}
+
 		params = append(params, "-iwad", g.Iwad) // -iwad seems to be universal across zdoom, boom and chocolate doom
 	}
 
