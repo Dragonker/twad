@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/zmnpl/twad/base"
-	"github.com/zmnpl/twad/rofimode"
-	"github.com/zmnpl/twad/tui"
+	"github.com/Dragonker/twad/base"
+	"github.com/Dragonker/twad/rofimode"
+	"github.com/Dragonker/twad/tui"
 )
 
 func main() {
