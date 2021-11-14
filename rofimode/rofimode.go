@@ -6,8 +6,8 @@ import (
 	"io"
 	"os/exec"
 
-	"github.com/zmnpl/twad/base"
-	"github.com/zmnpl/twad/games"
+	"github.com/Dragonker/twad/base"
+	"github.com/Dragonker/twad/games"
 )
 
 // RunRofiMode starts rofi (or demenu) to select and run a already created game.

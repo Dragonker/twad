@@ -6,7 +6,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/zmnpl/twad/base"
+	"github.com/Dragonker/twad/base"
 )
 
 // GameList holds all the games configured

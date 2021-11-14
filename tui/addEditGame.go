@@ -6,9 +6,9 @@ import (
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/zmnpl/twad/base"
-	"github.com/zmnpl/twad/games"
-	"github.com/zmnpl/twad/ports"
+	"github.com/Dragonker/twad/base"
+	"github.com/Dragonker/twad/games"
+	"github.com/Dragonker/twad/ports"
 )
 
 func splitParams(params string) []string {

@@ -3,12 +3,12 @@ package tui
 import (
 	"path/filepath"
 
-	"github.com/zmnpl/twad/games"
+	"github.com/Dragonker/twad/games"
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/zmnpl/goidgames"
-	"github.com/zmnpl/twad/base"
+	"github.com/Dragonker/goidgames"
+	"github.com/Dragonker/twad/base"
 )
 
 type Foo *tview.TextView

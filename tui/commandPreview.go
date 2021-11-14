@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/rivo/tview"
-	"github.com/zmnpl/twad/games"
+	"github.com/Dragonker/twad/games"
 )
 
 const (

@@ -4,10 +4,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/zmnpl/twad/helper"
+	"github.com/Dragonker/twad/helper"
 
 	"github.com/rivo/tview"
-	"github.com/zmnpl/twad/games"
+	"github.com/Dragonker/twad/games"
 )
 
 // tree view for selecting additional mods TODO

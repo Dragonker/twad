@@ -7,8 +7,8 @@ import (
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/zmnpl/twad/base"
-	"github.com/zmnpl/twad/helper"
+	"github.com/Dragonker/twad/base"
+	"github.com/Dragonker/twad/helper"
 )
 
 type zipImportUI struct {
