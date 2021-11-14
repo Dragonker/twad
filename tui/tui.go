@@ -7,7 +7,7 @@ import (
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/Dragonker/goidgames"
+	"github.com/zmnpl/goidgames"
 	"github.com/Dragonker/twad/base"
 )
 

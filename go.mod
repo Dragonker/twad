@@ -1,4 +1,4 @@
-module github.com/zmnpl/twad
+module github.com/Dragonker/twad
 
 go 1.16
 
@@ -17,5 +17,3 @@ require (
 	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22 // indirect
 	golang.org/x/term v0.0.0-20210615171337-6886f2dfbf5b // indirect
 )
-
-replace github.com/zmnpl/twad => github.com/Dragonker/twad v0.18.1-0.20211111225637-f9cacabf32ca
