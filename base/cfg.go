@@ -14,8 +14,8 @@ import (
 	"sync"
 
 	"github.com/mholt/archiver/v3"
-	"github.com/Dragonker/twad/helper"
-	"github.com/Dragonker/twad/ports"
+	"github.com/achequisde/twad/helper"
+	"github.com/achequisde/twad/ports"
 )
 
 var (

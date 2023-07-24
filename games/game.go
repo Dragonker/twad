@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Dragonker/twad/base"
-	"github.com/Dragonker/twad/helper"
-	"github.com/Dragonker/twad/ports"
-	st "github.com/Dragonker/twad/ports/savesStats"
+	"github.com/achequisde/twad/base"
+	"github.com/achequisde/twad/helper"
+	"github.com/achequisde/twad/ports"
+	st "github.com/achequisde/twad/ports/savesStats"
 )
 
 // Game represents one game configuration

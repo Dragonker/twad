@@ -6,8 +6,8 @@ import (
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/Dragonker/twad/base"
-	"github.com/Dragonker/twad/games"
+	"github.com/achequisde/twad/base"
+	"github.com/achequisde/twad/games"
 )
 
 func makeDemoList(g *games.Game) (*tview.Flex, error) {

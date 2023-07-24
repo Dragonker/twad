@@ -6,7 +6,7 @@ import (
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/Dragonker/twad/ports/savesStats"
+	"github.com/achequisde/twad/ports/savesStats"
 )
 
 //  stats

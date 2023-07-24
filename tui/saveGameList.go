@@ -5,7 +5,7 @@ import (
 
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/Dragonker/twad/games"
+	"github.com/achequisde/twad/games"
 )
 
 func makeSavegameList(g *games.Game) (*tview.Flex, error) {

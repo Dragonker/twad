@@ -3,8 +3,8 @@ package tui
 import (
 	"github.com/gdamore/tcell/v2"
 	"github.com/rivo/tview"
-	"github.com/Dragonker/twad/games"
-	"github.com/Dragonker/twad/helper"
+	"github.com/achequisde/twad/games"
+	"github.com/achequisde/twad/helper"
 )
 
 // center table with mods

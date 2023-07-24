@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/rivo/tview"
-	"github.com/Dragonker/twad/games"
+	"github.com/achequisde/twad/games"
 )
 
 //  stats

@@ -1,4 +1,4 @@
-module github.com/Dragonker/twad
+module github.com/achequisde/twad
 
 go 1.16
 
